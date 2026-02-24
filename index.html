@@ -405,13 +405,7 @@ section { padding: 80px 5%; }
 .build-item-text { flex: 1; }
 .build-item-text h4 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 .build-item-text p { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
-.build-item.done { border-left: 3px solid var(--lime); }
-.build-item.in-progress { border-left: 3px solid var(--plum); }
-.build-item.planned { border-left: 3px solid rgba(155,135,232,0.25); opacity: 0.75; }
 .build-badge { flex-shrink: 0; font-size: 0.66rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; font-family: 'Sora', sans-serif; letter-spacing: .04em; align-self: center; }
-.badge-done { background: rgba(212,245,66,0.18); color: #5a7000; border: 1px solid rgba(212,245,66,0.4); }
-.badge-progress { background: rgba(155,135,232,0.15); color: var(--plum-dark); border: 1px solid rgba(155,135,232,0.3); }
-.badge-planned { background: rgba(155,135,232,0.06); color: var(--text-muted); border: 1px solid var(--border); }
 
 /* ── CTA STRIP ── */
 .cta-strip { background: linear-gradient(135deg, var(--plum), var(--plum-dark)); padding: 64px 5%; text-align: center; }
@@ -502,7 +496,7 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
       <a href="#services">Modules</a>
       <a href="#pipeline">Pipeline</a>
       <a href="#scope-modes">Scope Modes</a>
-      <a href="#build-status">Build Status</a>
+      <a href="#build-status">Development Phases</a>
     </div>
     <span class="nav-proto-badge">Portfolio Prototype</span>
   </div>
@@ -649,9 +643,9 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
         <p>Runs deterministic, temperature-zero LLM prompt simulations against scoped content using real-world query patterns. Identifies retrieval gaps, hallucination entry points, and entity coverage blind spots across each audit surface.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">🛒</div>
-        <h3>Commerce Readiness Layer</h3>
-        <p>Audits product catalog intelligence, purchase-intent signal density, and AI-assisted commerce surface quality. Scores how effectively a brand converts within post-search generative discovery environments.</p>
+        <div class="service-icon">🧩</div>
+        <h3>Agentic Commerce Readiness</h3>
+        <p>Audits AI-transaction infrastructure without executing transactions. Validates MCP-compatible schema structure, endpoint contract consistency, tool-call compatibility, authentication flow readiness, OpenAPI exposure, and protocol maturity scoring — strictly audit-only, non-transactional.</p>
       </div>
     </div>
   </div>
@@ -776,7 +770,7 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
     <div class="section-head">
       <div class="section-label">System Architecture</div>
       <h2>The Retrieval Intelligence Pipeline</h2>
-      <p>Eight deterministic stages transform raw URLs into actionable retrieval scores, entity models, and structured recommendations — each stage dependent on validated output from the previous.</p>
+      <p>Nine deterministic stages transform raw URLs into actionable retrieval scores, entity models, and structured recommendations — each stage dependent on validated output from the previous.</p>
     </div>
     <div class="pipeline-grid">
       <div class="pipeline-node">
@@ -818,6 +812,11 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
         <div class="p-node-icon">✅</div>
         <div class="p-node-label">Recommendations</div>
         <div class="p-node-sub">Ranked &amp; Typed</div>
+      </div>
+      <div class="pipeline-node">
+        <div class="p-node-icon">🧩</div>
+        <div class="p-node-label">Agentic Commerce</div>
+        <div class="p-node-sub">MCP &amp; Protocol Audit</div>
       </div>
     </div>
   </div>
@@ -1020,6 +1019,10 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
         <h4><span>Why deterministic LLM scoring?</span><span class="q-num">04</span></h4>
         <p>Without temperature-zero, seed-controlled dispatch, score changes between audit runs could reflect model stochasticity rather than content changes. Determinism makes the scoring system scientifically valid — a delta in AI Visibility Score means the content changed, not the random seed. This is a foundational architectural requirement.</p>
       </div>
+      <div class="faq-item">
+        <h4><span>Does RetrieveAI execute transactions or process payments?</span><span class="q-num">05</span></h4>
+        <p>No. The Agentic Commerce layer is strictly an infrastructure audit. It validates whether a commerce system is structurally ready for AI-agent interaction but does not perform checkout, payment execution, inventory locking, or financial transactions.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1028,64 +1031,82 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
 <section class="build-status" id="build-status">
   <div class="build-inner">
     <div class="section-head">
-      <div class="section-label">Current Build Status</div>
-      <h2>Prototype Roadmap</h2>
-      <p>Active development progress across all pipeline modules. Features are being built, tested, and validated against real audit runs.</p>
+      <div class="section-label">Development Phases</div>
+      <h2>Retrieval Intelligence &amp; Agentic Commerce Blueprint</h2>
+      <p>This roadmap outlines the engineered phases of the Retrieval Intelligence Engine. The system is currently an architectural prototype designed to validate deterministic retrieval scoring and AI-commerce readiness models — not a production SaaS.</p>
     </div>
     <div class="build-list">
 
-      <div class="build-item done">
-        <div class="build-status-icon">✅</div>
+      <div class="build-item">
+        <div class="build-status-icon">1</div>
         <div class="build-item-text">
-          <h4>URL Discovery Engine</h4>
+          <h4>Phase 1 — URL Discovery Foundation</h4>
           <p>Sitemap parsing, Playwright-based link extraction, URL classification and deduplication. Produces a typed URL inventory as the first pipeline stage input, handling redirects and canonical resolution.</p>
         </div>
-        <span class="build-badge badge-done">Complete</span>
       </div>
 
-      <div class="build-item done">
-        <div class="build-status-icon">✅</div>
+      <div class="build-item">
+        <div class="build-status-icon">2</div>
         <div class="build-item-text">
-          <h4>Context Cluster Generator</h4>
+          <h4>Phase 2 — Scope &amp; Context Modeling</h4>
           <p>Semantic clustering of URL sets into coherent retrieval contexts. Bundles related pages before prompt dispatch to reduce token overhead, improve simulation fidelity, and enable cross-URL entity coherence scoring.</p>
         </div>
-        <span class="build-badge badge-done">Complete</span>
       </div>
 
-      <div class="build-item done">
-        <div class="build-status-icon">✅</div>
+      <div class="build-item">
+        <div class="build-status-icon">3</div>
         <div class="build-item-text">
-          <h4>AI Visibility Score Engine</h4>
-          <p>Composite scoring system combining entity recall rate, prompt match frequency, and representation density into a normalized 0–100 visibility score per URL and context cluster.</p>
+          <h4>Phase 3 — Crawl &amp; Extraction Layer</h4>
+          <p>Playwright-driven content extraction, structured data parsing, and clean text normalization. Produces validated, LLM-ready content bundles for downstream prompt simulation and scoring stages.</p>
         </div>
-        <span class="build-badge badge-done">Complete</span>
       </div>
 
-      <div class="build-item done">
-        <div class="build-status-icon">✅</div>
+      <div class="build-item">
+        <div class="build-status-icon">4</div>
         <div class="build-item-text">
-          <h4>Prompt Simulation Engine</h4>
+          <h4>Phase 4 — Prompt Intelligence Engine</h4>
+          <p>Real-world query pattern generation scoped to audit intent surfaces. Produces a typed prompt universe per scope mode, calibrated to retrieval depth and entity coverage objectives.</p>
+        </div>
+      </div>
+
+      <div class="build-item">
+        <div class="build-status-icon">5</div>
+        <div class="build-item-text">
+          <h4>Phase 5 — Deterministic Simulation Core</h4>
           <p>Deterministic, temperature-zero LLM prompt dispatcher. Generates real-world query patterns per scope, dispatches with seed control, and parses structured retrieval results for downstream scoring stages.</p>
         </div>
-        <span class="build-badge badge-done">Complete</span>
       </div>
 
-      <div class="build-item in-progress">
-        <div class="build-status-icon">🔄</div>
+      <div class="build-item">
+        <div class="build-status-icon">6</div>
         <div class="build-item-text">
-          <h4>Commerce Layer v2 — In Progress</h4>
-          <p>Purchase-intent signal density scoring and AI-assisted product catalog intelligence. v1 ships basic commerce surface detection; v2 adds generative shopping simulation and structured product data schema validation.</p>
+          <h4>Phase 6 — Multi-Dimensional Scoring</h4>
+          <p>Composite scoring system combining entity recall rate, prompt match frequency, and representation density into a normalized 0–100 visibility score per URL and context cluster.</p>
         </div>
-        <span class="build-badge badge-progress">In Progress</span>
       </div>
 
-      <div class="build-item planned">
-        <div class="build-status-icon">🕒</div>
+      <div class="build-item">
+        <div class="build-status-icon">7</div>
         <div class="build-item-text">
-          <h4>Prompt Commerce Transactions — Planned</h4>
-          <p>End-to-end simulation of purchase-intent prompt flows through generative AI interfaces. Models how AI-assisted commerce surfaces retrieve, recommend, and convert product entities from the retrieval layer.</p>
+          <h4>Phase 7 — Recommendation Engine</h4>
+          <p>Ranked, typed remediation recommendations generated from scoring gaps. Maps low-signal entities and under-represented surfaces to structured improvement actions with priority scoring.</p>
         </div>
-        <span class="build-badge badge-planned">Planned</span>
+      </div>
+
+      <div class="build-item">
+        <div class="build-status-icon">8</div>
+        <div class="build-item-text">
+          <h4>Phase 8 — Snapshot &amp; Volatility Tracking</h4>
+          <p>Score delta tracking across audit runs. Surfaces volatility in LLM retrieval behavior per entity, identifies regression patterns, and enables content-change attribution against scoring shifts over time.</p>
+        </div>
+      </div>
+
+      <div class="build-item">
+        <div class="build-status-icon">9</div>
+        <div class="build-item-text">
+          <h4>Phase 9 — Agentic Commerce Readiness (Audit-Only)</h4>
+          <p>Infrastructure readiness audit for AI-agent-compatible commerce systems. Validates MCP-compatible schema structure, endpoint contract consistency, tool-call compatibility, authentication flow readiness, OpenAPI exposure, and protocol maturity scoring — strictly audit-only, non-transactional.</p>
+        </div>
       </div>
 
     </div>
@@ -1108,9 +1129,9 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
         <p class="f-tagline">AI Retrieval Engineering Prototype. Built for the post-search era.</p>
         <div class="proto-note-footer">Under Active Development</div>
         <div class="social-links">
-          <a class="social-link" href="#">in</a>
-          <a class="social-link" href="#">gh</a>
-          <a class="social-link" href="#">✉</a>
+          <a class="social-link" href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener noreferrer">in</a>
+          <a class="social-link" href="https://github.com/dahiyaakshay" target="_blank" rel="noopener noreferrer">gh</a>
+          <a class="social-link" href="mailto:akshaydahiya92.ad@gmail.com" target="_blank" rel="noopener noreferrer">✉</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1120,15 +1141,15 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
           <li><a href="#services">Core Modules</a></li>
           <li><a href="#pipeline">Pipeline Architecture</a></li>
           <li><a href="#scope-modes">Scope Modes</a></li>
-          <li><a href="#build-status">Build Status</a></li>
+          <li><a href="#build-status">Development Phases</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Connect</h5>
         <ul>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/dahiyaakshay" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://akshaydahiya.site/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
         </ul>
       </div>
     </div>
@@ -1141,3 +1162,4 @@ footer { background: var(--navy); padding: 60px 5% 32px; }
 
 </body>
 </html>
+
