@@ -2,7 +2,7 @@
 
 RetrieveAI is a **Scoped-First AI Retrieval Intelligence Engine** built to measure how generative AI systems retrieve, interpret, and represent a brand.
 
-Unlike traditional SEO tools that measure rankings on search engines, RetrieveAI analyzes **inclusion inside LLM inference** — modeling how brands surface in AI-generated answers.
+Unlike traditional SEO tools that measure rankings on search engines, RetrieveAI analyzes **inclusion inside LLM inference** modeling how brands surface in AI-generated answers.
 
 This is not an SEO tool.
 
@@ -15,11 +15,11 @@ This is Retrieval Engineering infrastructure.
 Search has shifted.
 
 Users increasingly ask AI systems instead of browsing search results.  
-Large language models synthesize, summarize, compare, and recommend brands — often without exposing traditional ranking signals.
+Large language models synthesize, summarize, compare, and recommend brands often without exposing traditional ranking signals.
 
 Brands now compete inside:
 
-- Chat-based answers
+- Chat based answers
 - AI summaries
 - Conversational recommendations
 - Multi-source synthesis outputs
@@ -48,13 +48,13 @@ It produces a unified score system that reflects:
 - Entity Strength
 - Structured Clarity
 - Retrieval Coverage
-- Commerce Readiness (architecture-ready)
+- Commerce Readiness (architecture ready)
 
 ---
 
 ## 🏗 Architectural Philosophy
 
-RetrieveAI is designed with production-grade backend discipline.
+RetrieveAI is designed with production grade backend discipline.
 
 ### 1️⃣ Scoped-First Audit Model
 
@@ -104,7 +104,7 @@ The system architecture includes:
 - Cost ledger per API call
 - Batch embedding control
 
-RetrieveAI is built to fail gracefully — not crash silently.
+RetrieveAI is built to fail gracefully not crash silently.
 
 ---
 
@@ -136,7 +136,7 @@ RetrieveAI is structured into layered execution phases:
 9. Recommendation Engine
 10. Snapshot & Delta Comparison
 
-Each phase is isolated, resumable, and transaction-wrapped.
+Each phase is isolated, resumable, and transaction wrapped.
 
 ---
 
@@ -170,7 +170,7 @@ The goal is to be retrieved.
 
 No Redis.  
 No unnecessary abstraction layers.  
-Single-datastore architecture.
+Single datastore architecture.
 
 ---
 
@@ -203,7 +203,7 @@ It is built for the post-search ecosystem.
 
 ## 📁 Repository Contents
 
-This repository contains the public-facing landing prototype.
+This repository contains the public facing landing prototype.
 
 The full backend, simulation engine, and scoring logic are private.
 
